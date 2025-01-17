@@ -1,0 +1,85 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Holli\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\main.elf C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Holli\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FASets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6328
+load:0x40078000,len:15836
+ho 0 tail 12 room 4
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-1346-gcc9fb5bd5e 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jan 16 2025 03:35:24[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=11718h ( 71448) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=00021740 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=00021764 vaddr=3ffb0000 size=0268ch (  9868) load[0m
+[0;32mI (117) esp_image: segment 3: paddr=00023df8 vaddr=40080000 size=0c220h ( 49696) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=27a84h (162436) map[0m
+[0;32mI (184) esp_image: segment 5: paddr=00057aac vaddr=4008c220 size=05fe4h ( 24548) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (212) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (212) esp_psram: Speed: 80MHz[0m
+[0;32mI (212) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (219) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (227) cpu_start: Multicore app[0m
+[0;32mI (744) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (752) cpu_start: Pro cpu start user code[0m
+[0;32mI (752) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (752) app_init: Application information:[0m
+[0;32mI (752) app_init: Project name:     main[0m
+[0;32mI (756) app_init: App version:      b98c57f-dirty[0m
+[0;32mI (760) app_init: Compile time:     Jan 16 2025 04:25:57[0m
+[0;32mI (765) app_init: ELF file SHA256:  afe72d54d...[0m
+[0;32mI (769) app_init: ESP-IDF:          v5.5-dev-1346-gcc9fb5bd5e[0m
+[0;32mI (775) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (779) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (783) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (787) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (793) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (798) heap_init: At 3FFB3048 len 0002CFB8 (179 KiB): DRAM[0m
+[0;32mI (803) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (809) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (814) heap_init: At 40092204 len 0000DDFC (55 KiB): IRAM[0m
+[0;32mI (820) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (827) spi_flash: detected chip: generic[0m
+[0;32mI (830) spi_flash: flash io: dio[0m
+[0;33mW (832) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (845) main_task: Started on CPU0[0m
+[0;32mI (855) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (855) main_task: Calling app_main()[0m
+[0;32mI (855) SD_CARD: Initializing SD card[0m
+[0;32mI (855) SD_CARD: Using SDMMC peripheral[0m
+[0;32mI (865) SD_CARD: Mounting filesystem[0m
+[0;32mI (915) SD_CARD: Filesystem mounted[0m
+Name: APPSD
+Type: SDSC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 960MB
+CSD: ver=1, sector_size=512, capacity=1966080 read_bl_len=10
+SSR: bus_width=1
+[0;32mI (925) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (935) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (945) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (955) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (965) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (975) SD_CARD: Card unmounted[0m
+[0;32mI (975) main_task: Returned from app_main()[0m

@@ -1,0 +1,792 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Holli/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6600 bytes. 0xa00 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5-dev-1346-gcc9fb5bd5e\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/main -IC:/Users/Holli/esp-idf/components/newlib/platform_include -IC:/Users/Holli/esp-idf/components/freertos/config/include -IC:/Users/Holli/esp-idf/components/freertos/config/include/freertos -IC:/Users/Holli/esp-idf/components/freertos/config/xtensa/include -IC:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/Holli/esp-idf/components/freertos/esp_additions/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/include/soc -IC:/Users/Holli/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/Holli/esp-idf/components/esp_hw_support/dma/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/debug_probe/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/Holli/esp-idf/components/esp_hw_support/port/esp32/include -IC:/Users/Holli/esp-idf/components/heap/include -IC:/Users/Holli/esp-idf/components/heap/tlsf -IC:/Users/Holli/esp-idf/components/log/include -IC:/Users/Holli/esp-idf/components/soc/include -IC:/Users/Holli/esp-idf/components/soc/esp32 -IC:/Users/Holli/esp-idf/components/soc/esp32/include -IC:/Users/Holli/esp-idf/components/soc/esp32/register -IC:/Users/Holli/esp-idf/components/hal/platform_port/include -IC:/Users/Holli/esp-idf/components/hal/esp32/include -IC:/Users/Holli/esp-idf/components/hal/include -IC:/Users/Holli/esp-idf/components/esp_rom/include -IC:/Users/Holli/esp-idf/components/esp_rom/esp32/include -IC:/Users/Holli/esp-idf/components/esp_rom/esp32/include/esp32 -IC:/Users/Holli/esp-idf/components/esp_rom/esp32 -IC:/Users/Holli/esp-idf/components/esp_common/include -IC:/Users/Holli/esp-idf/components/esp_system/include -IC:/Users/Holli/esp-idf/components/esp_system/port/soc -IC:/Users/Holli/esp-idf/components/esp_system/port/include/private -IC:/Users/Holli/esp-idf/components/xtensa/esp32/include -IC:/Users/Holli/esp-idf/components/xtensa/include -IC:/Users/Holli/esp-idf/components/xtensa/deprecated_include -IC:/Users/Holli/esp-idf/components/lwip/include -IC:/Users/Holli/esp-idf/components/lwip/include/apps -IC:/Users/Holli/esp-idf/components/lwip/include/apps/sntp -IC:/Users/Holli/esp-idf/components/lwip/lwip/src/include -IC:/Users/Holli/esp-idf/components/lwip/port/include -IC:/Users/Holli/esp-idf/components/lwip/port/freertos/include -IC:/Users/Holli/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/Holli/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/Holli/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/managed_components/espressif__esp32-camera/driver/include -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/managed_components/espressif__esp32-camera/conversions/include -IC:/Users/Holli/esp-idf/components/driver/deprecated -IC:/Users/Holli/esp-idf/components/driver/i2c/include -IC:/Users/Holli/esp-idf/components/driver/touch_sensor/include -IC:/Users/Holli/esp-idf/components/driver/twai/include -IC:/Users/Holli/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/Holli/esp-idf/components/esp_pm/include -IC:/Users/Holli/esp-idf/components/esp_ringbuf/include -IC:/Users/Holli/esp-idf/components/esp_driver_gpio/include -IC:/Users/Holli/esp-idf/components/esp_driver_pcnt/include -IC:/Users/Holli/esp-idf/components/esp_driver_gptimer/include -IC:/Users/Holli/esp-idf/components/esp_driver_spi/include -IC:/Users/Holli/esp-idf/components/esp_driver_mcpwm/include -IC:/Users/Holli/esp-idf/components/esp_driver_ana_cmpr/include -IC:/Users/Holli/esp-idf/components/esp_driver_i2s/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdmmc/include -IC:/Users/Holli/esp-idf/components/sdmmc/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdspi/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdio/include -IC:/Users/Holli/esp-idf/components/esp_driver_dac/include -IC:/Users/Holli/esp-idf/components/esp_driver_rmt/include -IC:/Users/Holli/esp-idf/components/esp_driver_tsens/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdm/include -IC:/Users/Holli/esp-idf/components/esp_driver_i2c/include -IC:/Users/Holli/esp-idf/components/esp_driver_uart/include -IC:/Users/Holli/esp-idf/components/vfs/include -IC:/Users/Holli/esp-idf/components/esp_driver_ledc/include -IC:/Users/Holli/esp-idf/components/esp_driver_parlio/include -IC:/Users/Holli/esp-idf/components/esp_driver_usb_serial_jtag/include -IC:/Users/Holli/esp-idf/components/mbedtls/port/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/Holli/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Users/Holli/esp-idf/components/esp_app_format/include -IC:/Users/Holli/esp-idf/components/esp_bootloader_format/include -IC:/Users/Holli/esp-idf/components/app_update/include -IC:/Users/Holli/esp-idf/components/bootloader_support/include -IC:/Users/Holli/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/Holli/esp-idf/components/esp_partition/include -IC:/Users/Holli/esp-idf/components/efuse/include -IC:/Users/Holli/esp-idf/components/efuse/esp32/include -IC:/Users/Holli/esp-idf/components/esp_mm/include -IC:/Users/Holli/esp-idf/components/spi_flash/include -IC:/Users/Holli/esp-idf/components/esp_security/include -IC:/Users/Holli/esp-idf/components/pthread/include -IC:/Users/Holli/esp-idf/components/esp_timer/include -IC:/Users/Holli/esp-idf/components/app_trace/include -IC:/Users/Holli/esp-idf/components/esp_event/include -IC:/Users/Holli/esp-idf/components/nvs_flash/include -IC:/Users/Holli/esp-idf/components/esp_phy/include -IC:/Users/Holli/esp-idf/components/esp_phy/esp32/include -IC:/Users/Holli/esp-idf/components/esp_vfs_console/include -IC:/Users/Holli/esp-idf/components/esp_netif/include -IC:/Users/Holli/esp-idf/components/wpa_supplicant/include -IC:/Users/Holli/esp-idf/components/wpa_supplicant/port/include -IC:/Users/Holli/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/Users/Holli/esp-idf/components/esp_coex/include -IC:/Users/Holli/esp-idf/components/esp_wifi/include -IC:/Users/Holli/esp-idf/components/esp_wifi/include/local -IC:/Users/Holli/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/Holli/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -IC:/Users/Holli/esp-idf/components/unity/include -IC:/Users/Holli/esp-idf/components/unity/unity/src -IC:/Users/Holli/esp-idf/components/cmock/CMock/src -IC:/Users/Holli/esp-idf/components/console -IC:/Users/Holli/esp-idf/components/http_parser -IC:/Users/Holli/esp-idf/components/esp-tls -IC:/Users/Holli/esp-idf/components/esp-tls/esp-tls-crypto -IC:/Users/Holli/esp-idf/components/esp_adc/include -IC:/Users/Holli/esp-idf/components/esp_adc/interface -IC:/Users/Holli/esp-idf/components/esp_adc/esp32/include -IC:/Users/Holli/esp-idf/components/esp_adc/deprecated/include -IC:/Users/Holli/esp-idf/components/esp_driver_isp/include -IC:/Users/Holli/esp-idf/components/esp_driver_cam/include -IC:/Users/Holli/esp-idf/components/esp_driver_cam/interface -IC:/Users/Holli/esp-idf/components/esp_driver_jpeg/include -IC:/Users/Holli/esp-idf/components/esp_driver_ppa/include -IC:/Users/Holli/esp-idf/components/esp_eth/include -IC:/Users/Holli/esp-idf/components/esp_gdbstub/include -IC:/Users/Holli/esp-idf/components/esp_hid/include -IC:/Users/Holli/esp-idf/components/tcp_transport/include -IC:/Users/Holli/esp-idf/components/esp_http_client/include -IC:/Users/Holli/esp-idf/components/esp_http_server/include -IC:/Users/Holli/esp-idf/components/esp_https_ota/include -IC:/Users/Holli/esp-idf/components/esp_https_server/include -IC:/Users/Holli/esp-idf/components/esp_psram/include -IC:/Users/Holli/esp-idf/components/esp_lcd/include -IC:/Users/Holli/esp-idf/components/esp_lcd/interface -IC:/Users/Holli/esp-idf/components/protobuf-c/protobuf-c -IC:/Users/Holli/esp-idf/components/protocomm/include/common -IC:/Users/Holli/esp-idf/components/protocomm/include/security -IC:/Users/Holli/esp-idf/components/protocomm/include/transports -IC:/Users/Holli/esp-idf/components/protocomm/include/crypto/srp6a -IC:/Users/Holli/esp-idf/components/protocomm/proto-c -IC:/Users/Holli/esp-idf/components/esp_local_ctrl/include -IC:/Users/Holli/esp-idf/components/espcoredump/include -IC:/Users/Holli/esp-idf/components/espcoredump/include/port/xtensa -IC:/Users/Holli/esp-idf/components/wear_levelling/include -IC:/Users/Holli/esp-idf/components/fatfs/diskio -IC:/Users/Holli/esp-idf/components/fatfs/src -IC:/Users/Holli/esp-idf/components/fatfs/vfs -IC:/Users/Holli/esp-idf/components/idf_test/include -IC:/Users/Holli/esp-idf/components/idf_test/include/esp32 -IC:/Users/Holli/esp-idf/components/ieee802154/include -IC:/Users/Holli/esp-idf/components/json/cJSON -IC:/Users/Holli/esp-idf/components/mqtt/esp-mqtt/include -IC:/Users/Holli/esp-idf/components/nvs_sec_provider/include -IC:/Users/Holli/esp-idf/components/perfmon/include -IC:/Users/Holli/esp-idf/components/rt/include -IC:/Users/Holli/esp-idf/components/spiffs/include -IC:/Users/Holli/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -mfix-esp32-psram-cache-issue -mfix-esp32-psram-cache-strategy=memw -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/Holli/esp-idf/Projects/eagle-eye/main=. -fmacro-prefix-map=C:/Users/Holli/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c
+In file included from C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:7:
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c: In function 'app_main':
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:301:5: error: field name not in record or union initializer
+  301 |     .osi_funcs = &g_wifi_osi_funcs, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:301:5: note: (near initialization for 'wifi_init')
+  301 |     .osi_funcs = &g_wifi_osi_funcs, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:301:18: error: initialization of 'wifi_config_t *' from incompatible pointer type 'wifi_osi_funcs_t *' [-Wincompatible-pointer-types]
+  301 |     .osi_funcs = &g_wifi_osi_funcs, \
+      |                  ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:301:18: note: (near initialization for 'wifi_init')
+  301 |     .osi_funcs = &g_wifi_osi_funcs, \
+      |                  ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:302:5: error: field name not in record or union initializer
+  302 |     .wpa_crypto_funcs = g_wifi_default_wpa_crypto_funcs, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:302:5: note: (near initialization for 'wifi_init')
+  302 |     .wpa_crypto_funcs = g_wifi_default_wpa_crypto_funcs, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:302:25: warning: excess elements in scalar initializer
+  302 |     .wpa_crypto_funcs = g_wifi_default_wpa_crypto_funcs, \
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:302:25: note: (near initialization for 'wifi_init')
+  302 |     .wpa_crypto_funcs = g_wifi_default_wpa_crypto_funcs, \
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:303:5: error: field name not in record or union initializer
+  303 |     .static_rx_buf_num = CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:303:5: note: (near initialization for 'wifi_init')
+  303 |     .static_rx_buf_num = CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/Holli/esp-idf/components/newlib/platform_include/stdio.h:8,
+                 from C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:1:
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:482:46: warning: excess elements in scalar initializer
+  482 | #define CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM 10
+      |                                              ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:303:26: note: in expansion of macro 'CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM'
+  303 |     .static_rx_buf_num = CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM,\
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:482:46: note: (near initialization for 'wifi_init')
+  482 | #define CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM 10
+      |                                              ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:303:26: note: in expansion of macro 'CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM'
+  303 |     .static_rx_buf_num = CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM,\
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:304:5: error: field name not in record or union initializer
+  304 |     .dynamic_rx_buf_num = CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:304:5: note: (near initialization for 'wifi_init')
+  304 |     .dynamic_rx_buf_num = CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:483:47: warning: excess elements in scalar initializer
+  483 | #define CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM 32
+      |                                               ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:304:27: note: in expansion of macro 'CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM'
+  304 |     .dynamic_rx_buf_num = CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM,\
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:483:47: note: (near initialization for 'wifi_init')
+  483 | #define CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM 32
+      |                                               ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:304:27: note: in expansion of macro 'CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM'
+  304 |     .dynamic_rx_buf_num = CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM,\
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:305:5: error: field name not in record or union initializer
+  305 |     .tx_buf_type = CONFIG_ESP_WIFI_TX_BUFFER_TYPE,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:305:5: note: (near initialization for 'wifi_init')
+  305 |     .tx_buf_type = CONFIG_ESP_WIFI_TX_BUFFER_TYPE,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:485:40: warning: excess elements in scalar initializer
+  485 | #define CONFIG_ESP_WIFI_TX_BUFFER_TYPE 1
+      |                                        ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:305:20: note: in expansion of macro 'CONFIG_ESP_WIFI_TX_BUFFER_TYPE'
+  305 |     .tx_buf_type = CONFIG_ESP_WIFI_TX_BUFFER_TYPE,\
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:485:40: note: (near initialization for 'wifi_init')
+  485 | #define CONFIG_ESP_WIFI_TX_BUFFER_TYPE 1
+      |                                        ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:305:20: note: in expansion of macro 'CONFIG_ESP_WIFI_TX_BUFFER_TYPE'
+  305 |     .tx_buf_type = CONFIG_ESP_WIFI_TX_BUFFER_TYPE,\
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:306:5: error: field name not in record or union initializer
+  306 |     .static_tx_buf_num = WIFI_STATIC_TX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:306:5: note: (near initialization for 'wifi_init')
+  306 |     .static_tx_buf_num = WIFI_STATIC_TX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:129:35: warning: excess elements in scalar initializer
+  129 | #define WIFI_STATIC_TX_BUFFER_NUM 0
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:306:26: note: in expansion of macro 'WIFI_STATIC_TX_BUFFER_NUM'
+  306 |     .static_tx_buf_num = WIFI_STATIC_TX_BUFFER_NUM,\
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:129:35: note: (near initialization for 'wifi_init')
+  129 | #define WIFI_STATIC_TX_BUFFER_NUM 0
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:306:26: note: in expansion of macro 'WIFI_STATIC_TX_BUFFER_NUM'
+  306 |     .static_tx_buf_num = WIFI_STATIC_TX_BUFFER_NUM,\
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:307:5: error: field name not in record or union initializer
+  307 |     .dynamic_tx_buf_num = WIFI_DYNAMIC_TX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:307:5: note: (near initialization for 'wifi_init')
+  307 |     .dynamic_tx_buf_num = WIFI_DYNAMIC_TX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:486:47: warning: excess elements in scalar initializer
+  486 | #define CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM 32
+      |                                               ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:139:36: note: in expansion of macro 'CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM'
+  139 | #define WIFI_DYNAMIC_TX_BUFFER_NUM CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:307:27: note: in expansion of macro 'WIFI_DYNAMIC_TX_BUFFER_NUM'
+  307 |     .dynamic_tx_buf_num = WIFI_DYNAMIC_TX_BUFFER_NUM,\
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:486:47: note: (near initialization for 'wifi_init')
+  486 | #define CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM 32
+      |                                               ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:139:36: note: in expansion of macro 'CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM'
+  139 | #define WIFI_DYNAMIC_TX_BUFFER_NUM CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:307:27: note: in expansion of macro 'WIFI_DYNAMIC_TX_BUFFER_NUM'
+  307 |     .dynamic_tx_buf_num = WIFI_DYNAMIC_TX_BUFFER_NUM,\
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:308:5: error: field name not in record or union initializer
+  308 |     .rx_mgmt_buf_type = CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:308:5: note: (near initialization for 'wifi_init')
+  308 |     .rx_mgmt_buf_type = CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:488:45: warning: excess elements in scalar initializer
+  488 | #define CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF 0
+      |                                             ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:308:25: note: in expansion of macro 'CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF'
+  308 |     .rx_mgmt_buf_type = CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF,\
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:488:45: note: (near initialization for 'wifi_init')
+  488 | #define CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF 0
+      |                                             ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:308:25: note: in expansion of macro 'CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF'
+  308 |     .rx_mgmt_buf_type = CONFIG_ESP_WIFI_DYNAMIC_RX_MGMT_BUF,\
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:309:5: error: field name not in record or union initializer
+  309 |     .rx_mgmt_buf_num = WIFI_RX_MGMT_BUF_NUM_DEF,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:309:5: note: (near initialization for 'wifi_init')
+  309 |     .rx_mgmt_buf_num = WIFI_RX_MGMT_BUF_NUM_DEF,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:489:45: warning: excess elements in scalar initializer
+  489 | #define CONFIG_ESP_WIFI_RX_MGMT_BUF_NUM_DEF 5
+      |                                             ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:145:34: note: in expansion of macro 'CONFIG_ESP_WIFI_RX_MGMT_BUF_NUM_DEF'
+  145 | #define WIFI_RX_MGMT_BUF_NUM_DEF CONFIG_ESP_WIFI_RX_MGMT_BUF_NUM_DEF
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:309:24: note: in expansion of macro 'WIFI_RX_MGMT_BUF_NUM_DEF'
+  309 |     .rx_mgmt_buf_num = WIFI_RX_MGMT_BUF_NUM_DEF,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:489:45: note: (near initialization for 'wifi_init')
+  489 | #define CONFIG_ESP_WIFI_RX_MGMT_BUF_NUM_DEF 5
+      |                                             ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:145:34: note: in expansion of macro 'CONFIG_ESP_WIFI_RX_MGMT_BUF_NUM_DEF'
+  145 | #define WIFI_RX_MGMT_BUF_NUM_DEF CONFIG_ESP_WIFI_RX_MGMT_BUF_NUM_DEF
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:309:24: note: in expansion of macro 'WIFI_RX_MGMT_BUF_NUM_DEF'
+  309 |     .rx_mgmt_buf_num = WIFI_RX_MGMT_BUF_NUM_DEF,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:310:5: error: field name not in record or union initializer
+  310 |     .cache_tx_buf_num = WIFI_CACHE_TX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:310:5: note: (near initialization for 'wifi_init')
+  310 |     .cache_tx_buf_num = WIFI_CACHE_TX_BUFFER_NUM,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:135:35: warning: excess elements in scalar initializer
+  135 | #define WIFI_CACHE_TX_BUFFER_NUM  0
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:310:25: note: in expansion of macro 'WIFI_CACHE_TX_BUFFER_NUM'
+  310 |     .cache_tx_buf_num = WIFI_CACHE_TX_BUFFER_NUM,\
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:135:35: note: (near initialization for 'wifi_init')
+  135 | #define WIFI_CACHE_TX_BUFFER_NUM  0
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:310:25: note: in expansion of macro 'WIFI_CACHE_TX_BUFFER_NUM'
+  310 |     .cache_tx_buf_num = WIFI_CACHE_TX_BUFFER_NUM,\
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:311:5: error: field name not in record or union initializer
+  311 |     .csi_enable = WIFI_CSI_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:311:5: note: (near initialization for 'wifi_init')
+  311 |     .csi_enable = WIFI_CSI_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:153:34: warning: excess elements in scalar initializer
+  153 | #define WIFI_CSI_ENABLED         0
+      |                                  ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:311:19: note: in expansion of macro 'WIFI_CSI_ENABLED'
+  311 |     .csi_enable = WIFI_CSI_ENABLED,\
+      |                   ^~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:153:34: note: (near initialization for 'wifi_init')
+  153 | #define WIFI_CSI_ENABLED         0
+      |                                  ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:311:19: note: in expansion of macro 'WIFI_CSI_ENABLED'
+  311 |     .csi_enable = WIFI_CSI_ENABLED,\
+      |                   ^~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:312:5: error: field name not in record or union initializer
+  312 |     .ampdu_rx_enable = WIFI_AMPDU_RX_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:312:5: note: (near initialization for 'wifi_init')
+  312 |     .ampdu_rx_enable = WIFI_AMPDU_RX_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:157:38: warning: excess elements in scalar initializer
+  157 | #define WIFI_AMPDU_RX_ENABLED        1
+      |                                      ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:312:24: note: in expansion of macro 'WIFI_AMPDU_RX_ENABLED'
+  312 |     .ampdu_rx_enable = WIFI_AMPDU_RX_ENABLED,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:157:38: note: (near initialization for 'wifi_init')
+  157 | #define WIFI_AMPDU_RX_ENABLED        1
+      |                                      ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:312:24: note: in expansion of macro 'WIFI_AMPDU_RX_ENABLED'
+  312 |     .ampdu_rx_enable = WIFI_AMPDU_RX_ENABLED,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:313:5: error: field name not in record or union initializer
+  313 |     .ampdu_tx_enable = WIFI_AMPDU_TX_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:313:5: note: (near initialization for 'wifi_init')
+  313 |     .ampdu_tx_enable = WIFI_AMPDU_TX_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:163:38: warning: excess elements in scalar initializer
+  163 | #define WIFI_AMPDU_TX_ENABLED        1
+      |                                      ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:313:24: note: in expansion of macro 'WIFI_AMPDU_TX_ENABLED'
+  313 |     .ampdu_tx_enable = WIFI_AMPDU_TX_ENABLED,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:163:38: note: (near initialization for 'wifi_init')
+  163 | #define WIFI_AMPDU_TX_ENABLED        1
+      |                                      ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:313:24: note: in expansion of macro 'WIFI_AMPDU_TX_ENABLED'
+  313 |     .ampdu_tx_enable = WIFI_AMPDU_TX_ENABLED,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:314:5: error: field name not in record or union initializer
+  314 |     .amsdu_tx_enable = WIFI_AMSDU_TX_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:314:5: note: (near initialization for 'wifi_init')
+  314 |     .amsdu_tx_enable = WIFI_AMSDU_TX_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:171:38: warning: excess elements in scalar initializer
+  171 | #define WIFI_AMSDU_TX_ENABLED        0
+      |                                      ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:314:24: note: in expansion of macro 'WIFI_AMSDU_TX_ENABLED'
+  314 |     .amsdu_tx_enable = WIFI_AMSDU_TX_ENABLED,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:171:38: note: (near initialization for 'wifi_init')
+  171 | #define WIFI_AMSDU_TX_ENABLED        0
+      |                                      ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:314:24: note: in expansion of macro 'WIFI_AMSDU_TX_ENABLED'
+  314 |     .amsdu_tx_enable = WIFI_AMSDU_TX_ENABLED,\
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:315:5: error: field name not in record or union initializer
+  315 |     .nvs_enable = WIFI_NVS_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:315:5: note: (near initialization for 'wifi_init')
+  315 |     .nvs_enable = WIFI_NVS_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:175:35: warning: excess elements in scalar initializer
+  175 | #define WIFI_NVS_ENABLED          1
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:315:19: note: in expansion of macro 'WIFI_NVS_ENABLED'
+  315 |     .nvs_enable = WIFI_NVS_ENABLED,\
+      |                   ^~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:175:35: note: (near initialization for 'wifi_init')
+  175 | #define WIFI_NVS_ENABLED          1
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:315:19: note: in expansion of macro 'WIFI_NVS_ENABLED'
+  315 |     .nvs_enable = WIFI_NVS_ENABLED,\
+      |                   ^~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:316:5: error: field name not in record or union initializer
+  316 |     .nano_enable = WIFI_NANO_FORMAT_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:316:5: note: (near initialization for 'wifi_init')
+  316 |     .nano_enable = WIFI_NANO_FORMAT_ENABLED,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:183:35: warning: excess elements in scalar initializer
+  183 | #define WIFI_NANO_FORMAT_ENABLED  0
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:316:20: note: in expansion of macro 'WIFI_NANO_FORMAT_ENABLED'
+  316 |     .nano_enable = WIFI_NANO_FORMAT_ENABLED,\
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:183:35: note: (near initialization for 'wifi_init')
+  183 | #define WIFI_NANO_FORMAT_ENABLED  0
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:316:20: note: in expansion of macro 'WIFI_NANO_FORMAT_ENABLED'
+  316 |     .nano_enable = WIFI_NANO_FORMAT_ENABLED,\
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:317:5: error: field name not in record or union initializer
+  317 |     .rx_ba_win = WIFI_DEFAULT_RX_BA_WIN,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:317:5: note: (near initialization for 'wifi_init')
+  317 |     .rx_ba_win = WIFI_DEFAULT_RX_BA_WIN,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:493:35: warning: excess elements in scalar initializer
+  493 | #define CONFIG_ESP_WIFI_RX_BA_WIN 6
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:192:32: note: in expansion of macro 'CONFIG_ESP_WIFI_RX_BA_WIN'
+  192 | #define WIFI_DEFAULT_RX_BA_WIN CONFIG_ESP_WIFI_RX_BA_WIN
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:317:18: note: in expansion of macro 'WIFI_DEFAULT_RX_BA_WIN'
+  317 |     .rx_ba_win = WIFI_DEFAULT_RX_BA_WIN,\
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:493:35: note: (near initialization for 'wifi_init')
+  493 | #define CONFIG_ESP_WIFI_RX_BA_WIN 6
+      |                                   ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:192:32: note: in expansion of macro 'CONFIG_ESP_WIFI_RX_BA_WIN'
+  192 | #define WIFI_DEFAULT_RX_BA_WIN CONFIG_ESP_WIFI_RX_BA_WIN
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:317:18: note: in expansion of macro 'WIFI_DEFAULT_RX_BA_WIN'
+  317 |     .rx_ba_win = WIFI_DEFAULT_RX_BA_WIN,\
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:318:5: error: field name not in record or union initializer
+  318 |     .wifi_task_core_id = WIFI_TASK_CORE_ID,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:318:5: note: (near initialization for 'wifi_init')
+  318 |     .wifi_task_core_id = WIFI_TASK_CORE_ID,\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:200:27: warning: excess elements in scalar initializer
+  200 | #define WIFI_TASK_CORE_ID 0
+      |                           ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:318:26: note: in expansion of macro 'WIFI_TASK_CORE_ID'
+  318 |     .wifi_task_core_id = WIFI_TASK_CORE_ID,\
+      |                          ^~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:200:27: note: (near initialization for 'wifi_init')
+  200 | #define WIFI_TASK_CORE_ID 0
+      |                           ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:318:26: note: in expansion of macro 'WIFI_TASK_CORE_ID'
+  318 |     .wifi_task_core_id = WIFI_TASK_CORE_ID,\
+      |                          ^~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:319:5: error: field name not in record or union initializer
+  319 |     .beacon_max_len = WIFI_SOFTAP_BEACON_MAX_LEN, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:319:5: note: (near initialization for 'wifi_init')
+  319 |     .beacon_max_len = WIFI_SOFTAP_BEACON_MAX_LEN, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:496:47: warning: excess elements in scalar initializer
+  496 | #define CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN 752
+      |                                               ^~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:204:36: note: in expansion of macro 'CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN'
+  204 | #define WIFI_SOFTAP_BEACON_MAX_LEN CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:319:23: note: in expansion of macro 'WIFI_SOFTAP_BEACON_MAX_LEN'
+  319 |     .beacon_max_len = WIFI_SOFTAP_BEACON_MAX_LEN, \
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:496:47: note: (near initialization for 'wifi_init')
+  496 | #define CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN 752
+      |                                               ^~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:204:36: note: in expansion of macro 'CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN'
+  204 | #define WIFI_SOFTAP_BEACON_MAX_LEN CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:319:23: note: in expansion of macro 'WIFI_SOFTAP_BEACON_MAX_LEN'
+  319 |     .beacon_max_len = WIFI_SOFTAP_BEACON_MAX_LEN, \
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:320:5: error: field name not in record or union initializer
+  320 |     .mgmt_sbuf_num = WIFI_MGMT_SBUF_NUM, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:320:5: note: (near initialization for 'wifi_init')
+  320 |     .mgmt_sbuf_num = WIFI_MGMT_SBUF_NUM, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:497:39: warning: excess elements in scalar initializer
+  497 | #define CONFIG_ESP_WIFI_MGMT_SBUF_NUM 32
+      |                                       ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:210:28: note: in expansion of macro 'CONFIG_ESP_WIFI_MGMT_SBUF_NUM'
+  210 | #define WIFI_MGMT_SBUF_NUM CONFIG_ESP_WIFI_MGMT_SBUF_NUM
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:320:22: note: in expansion of macro 'WIFI_MGMT_SBUF_NUM'
+  320 |     .mgmt_sbuf_num = WIFI_MGMT_SBUF_NUM, \
+      |                      ^~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:497:39: note: (near initialization for 'wifi_init')
+  497 | #define CONFIG_ESP_WIFI_MGMT_SBUF_NUM 32
+      |                                       ^~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:210:28: note: in expansion of macro 'CONFIG_ESP_WIFI_MGMT_SBUF_NUM'
+  210 | #define WIFI_MGMT_SBUF_NUM CONFIG_ESP_WIFI_MGMT_SBUF_NUM
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:320:22: note: in expansion of macro 'WIFI_MGMT_SBUF_NUM'
+  320 |     .mgmt_sbuf_num = WIFI_MGMT_SBUF_NUM, \
+      |                      ^~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:321:5: error: field name not in record or union initializer
+  321 |     .feature_caps = WIFI_FEATURE_CAPS, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:321:5: note: (near initialization for 'wifi_init')
+  321 |     .feature_caps = WIFI_FEATURE_CAPS, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:291:27: warning: excess elements in scalar initializer
+  291 | #define WIFI_FEATURE_CAPS (WIFI_ENABLE_WPA3_SAE | \
+      |                           ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:321:21: note: in expansion of macro 'WIFI_FEATURE_CAPS'
+  321 |     .feature_caps = WIFI_FEATURE_CAPS, \
+      |                     ^~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:291:27: note: (near initialization for 'wifi_init')
+  291 | #define WIFI_FEATURE_CAPS (WIFI_ENABLE_WPA3_SAE | \
+      |                           ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:321:21: note: in expansion of macro 'WIFI_FEATURE_CAPS'
+  321 |     .feature_caps = WIFI_FEATURE_CAPS, \
+      |                     ^~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:322:5: error: field name not in record or union initializer
+  322 |     .sta_disconnected_pm = WIFI_STA_DISCONNECTED_PM_ENABLED,  \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:322:5: note: (near initialization for 'wifi_init')
+  322 |     .sta_disconnected_pm = WIFI_STA_DISCONNECTED_PM_ENABLED,  \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: warning: excess elements in scalar initializer
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: (near initialization for 'wifi_init')
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:323:5: error: field name not in record or union initializer
+  323 |     .espnow_max_encrypt_num = CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:323:5: note: (near initialization for 'wifi_init')
+  323 |     .espnow_max_encrypt_num = CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:510:48: warning: excess elements in scalar initializer
+  510 | #define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM 7
+      |                                                ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:323:31: note: in expansion of macro 'CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM'
+  323 |     .espnow_max_encrypt_num = CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM, \
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config/sdkconfig.h:510:48: note: (near initialization for 'wifi_init')
+  510 | #define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM 7
+      |                                                ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:323:31: note: in expansion of macro 'CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM'
+  323 |     .espnow_max_encrypt_num = CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM, \
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:324:5: error: field name not in record or union initializer
+  324 |     .tx_hetb_queue_num = WIFI_TX_HETB_QUEUE_NUM, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:324:5: note: (near initialization for 'wifi_init')
+  324 |     .tx_hetb_queue_num = WIFI_TX_HETB_QUEUE_NUM, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:278:32: warning: excess elements in scalar initializer
+  278 | #define WIFI_TX_HETB_QUEUE_NUM 1
+      |                                ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:324:26: note: in expansion of macro 'WIFI_TX_HETB_QUEUE_NUM'
+  324 |     .tx_hetb_queue_num = WIFI_TX_HETB_QUEUE_NUM, \
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:278:32: note: (near initialization for 'wifi_init')
+  278 | #define WIFI_TX_HETB_QUEUE_NUM 1
+      |                                ^
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:324:26: note: in expansion of macro 'WIFI_TX_HETB_QUEUE_NUM'
+  324 |     .tx_hetb_queue_num = WIFI_TX_HETB_QUEUE_NUM, \
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:325:5: error: field name not in record or union initializer
+  325 |     .dump_hesigb_enable = WIFI_DUMP_HESIGB_ENABLED, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:325:5: note: (near initialization for 'wifi_init')
+  325 |     .dump_hesigb_enable = WIFI_DUMP_HESIGB_ENABLED, \
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: warning: excess elements in scalar initializer
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: (near initialization for 'wifi_init')
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:326:5: error: field name not in record or union initializer
+  326 |     .magic = WIFI_INIT_CONFIG_MAGIC\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:326:5: note: (near initialization for 'wifi_init')
+  326 |     .magic = WIFI_INIT_CONFIG_MAGIC\
+      |     ^
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:189:35: warning: excess elements in scalar initializer
+  189 | #define WIFI_INIT_CONFIG_MAGIC    0x1F2F3F4F
+      |                                   ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:326:14: note: in expansion of macro 'WIFI_INIT_CONFIG_MAGIC'
+  326 |     .magic = WIFI_INIT_CONFIG_MAGIC\
+  327 | }
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:189:35: note: (near initialization for 'wifi_init')
+  189 | #define WIFI_INIT_CONFIG_MAGIC    0x1F2F3F4F
+      |                                   ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:326:14: note: in expansion of macro 'WIFI_INIT_CONFIG_MAGIC'
+  326 |     .magic = WIFI_INIT_CONFIG_MAGIC\
+  327 | }
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:12:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+   12 |   wifi_config_t* wifi_init = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:13:33: error: passing argument 1 of 'esp_wifi_init' from incompatible pointer type [-Wincompatible-pointer-types]
+   13 |   esp_err_t ret = esp_wifi_init(&wifi_init);
+      |                                 ^~~~~~~~~~
+      |                                 |
+      |                                 wifi_config_t **
+C:/Users/Holli/esp-idf/components/esp_wifi/include/esp_wifi.h:348:51: note: expected 'const wifi_init_config_t *' but argument is of type 'wifi_config_t **'
+  348 | esp_err_t esp_wifi_init(const wifi_init_config_t *config);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c: At top level:
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:23:6: error: expected identifier or '(' before '++' token
+   23 |      ++++
+      |      ^~
+ninja: build stopped: subcommand failed.

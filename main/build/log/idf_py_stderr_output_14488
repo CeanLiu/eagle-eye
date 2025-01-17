@@ -1,0 +1,2 @@
+Command: ninja sdkconfig
+ninja: error: unknown target 'sdkconfig'

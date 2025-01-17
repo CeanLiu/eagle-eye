@@ -1,0 +1,328 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Holli\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\main.elf C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Holli\esp-idf\tools\idf.py' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400db681: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+[0m
+[0;33m--- 0x400891f5: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x40089205: strlen at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m--- 0x400db67e: save_to_sd at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:136 (discriminator 1)
+0x400db722: app_main at C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:168
+0x401061ff: main_task at C:/Users/Holli/esp-idf/components/freertos/app_startup.c:208
+0x4008c029: vPortTaskWrapper at C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/Holli/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/Holli/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m
+Traceback (most recent call last):
+  File "C:\Users\Holli\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

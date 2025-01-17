@@ -1,0 +1,2 @@
+source C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/bootloader/gdbinit/symbols
+source C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/bootloader/gdbinit/connect

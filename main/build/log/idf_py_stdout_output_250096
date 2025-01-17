@@ -1,0 +1,95 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\Holli\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\main.elf C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\Holli\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6328
+load:0x40078000,len:15836
+ho 0 tail 12 room 4
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-1346-gcc9fb5bd5e 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jan 16 2025 03:35:24[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=15fa0h ( 90016) map[0m
+[0;32mI (115) esp_image: segment 1: paddr=00025fc8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00025fec vaddr=3ffb0000 size=03840h ( 14400) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00029834 vaddr=40080000 size=067e4h ( 26596) load[0m
+[0;32mI (135) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=36288h (221832) map[0m
+[0;32mI (198) esp_image: segment 5: paddr=000662b0 vaddr=400867e4 size=0c704h ( 50948) load[0m
+[0;32mI (224) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (225) boot: Disabling RNG early entropy source...[0m
+[0;32mI (235) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (236) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (236) esp_psram: Speed: 80MHz[0m
+[0;32mI (236) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (242) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (250) cpu_start: Multicore app[0m
+[0;32mI (768) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (776) cpu_start: Pro cpu start user code[0m
+[0;32mI (776) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (776) app_init: Application information:[0m
+[0;32mI (776) app_init: Project name:     main[0m
+[0;32mI (779) app_init: App version:      b98c57f-dirty[0m
+[0;32mI (784) app_init: Compile time:     Jan 16 2025 04:25:57[0m
+[0;32mI (789) app_init: ELF file SHA256:  79ba02355...[0m
+[0;32mI (793) app_init: ESP-IDF:          v5.5-dev-1346-gcc9fb5bd5e[0m
+[0;32mI (799) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (802) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (806) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (810) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (817) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (822) heap_init: At 3FFB4A78 len 0002B588 (173 KiB): DRAM[0m
+[0;32mI (827) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (832) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (838) heap_init: At 40092EE8 len 0000D118 (52 KiB): IRAM[0m
+[0;32mI (843) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (850) spi_flash: detected chip: generic[0m
+[0;32mI (853) spi_flash: flash io: dio[0m
+[0;33mW (856) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (869) main_task: Started on CPU0[0m
+[0;32mI (879) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (879) main_task: Calling app_main()[0m
+[0;32mI (879) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (889) cam_hal: cam init ok[0m
+[0;32mI (889) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (889) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (909) camera: Detected camera at address=0x3c[0m
+[0;32mI (909) camera: Detected OV3660 camera[0m
+[0;32mI (909) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1219) esp32 ll_cam: node_size: 3200, nodes_per_line: 2, lines_per_node: 1, dma_half_buffer_min:  6400, dma_half_buffer: 12800,lines_per_half_buffer:  2, dma_buffer_size: 25600, image_size: 960000[0m
+[0;32mI (1219) cam_hal: buffer_size: 25600, half_buffer_size: 12800, node_buffer_size: 3200, node_cnt: 8, total_cnt: 75[0m
+[0;32mI (1229) cam_hal: Allocating 960000 Byte frame buffer in PSRAM[0m
+[0;32mI (1239) cam_hal: Allocating 960000 Byte frame buffer in PSRAM[0m
+[0;32mI (1239) cam_hal: cam config ok[0m
+[0;32mI (1259) ov3660: Calculated VCO: 80000000 Hz, PLLCLK: 40000000 Hz, SYSCLK: 10000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1279) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1279) camera: WE GOOD[0m
+[0;32mI (1279) camera: WE GOOD[0m
+[0;32mI (1279) sdmmc_periph: sdmmc_host_init: SDMMC host already initialized, skipping init flow[0m
+[0;32mI (1289) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (1299) vfs_fat_sdmmc: sdmmc_card_init failed (0x105).[0m
+[0;32mI (1299) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1309) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1319) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1329) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1339) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1339) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1349) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1359) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1369) main_task: Returned from app_main()[0m

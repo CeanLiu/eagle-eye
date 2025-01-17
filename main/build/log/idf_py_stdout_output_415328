@@ -1,0 +1,76 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Holli/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6600 bytes. 0xa00 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c: In function 'init_sd':
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:83:32: warning: unused variable 'mount_config' [-Wunused-variable]
+   83 |     esp_vfs_fat_mount_config_t mount_config = {
+      |                                ^~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:77:18: warning: unused variable 'host' [-Wunused-variable]
+   77 |     sdmmc_host_t host = {
+      |                  ^~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:70:25: warning: unused variable 'slot_config' [-Wunused-variable]
+   70 |     sdmmc_slot_config_t slot_config = {
+      |                         ^~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:68:16: warning: unused variable 'base_path' [-Wunused-variable]
+   68 |     const char base_path []= "/sdcard";
+      |                ^~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable main.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/main.bin
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Holli/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/partition_table/partition-table.bin C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/main.bin"
+main.bin binary size 0x4daf0 bytes. Smallest app partition is 0x100000 bytes. 0xb2510 bytes (70%) free.
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Holli\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/Holli/esp-idf -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Users/Holli/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build -P C:/Users/Holli/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev3
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ac:15:18:f2:f9:70
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0005dfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26112 bytes to 16478...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007585... (100 %)
+Wrote 26112 bytes (16478 compressed) at 0x00001000 in 0.9 seconds (effective 240.7 kbit/s)...
+Hash of data verified.
+Compressed 318192 bytes to 164924...
+Writing at 0x00010000... (9 %)
+Writing at 0x0001f234... (18 %)
+Writing at 0x000281d0... (27 %)
+Writing at 0x0002dddc... (36 %)
+Writing at 0x000338ef... (45 %)
+Writing at 0x0003a888... (54 %)
+Writing at 0x00040510... (63 %)
+Writing at 0x0004624c... (72 %)
+Writing at 0x0004e7c9... (81 %)
+Writing at 0x00056def... (90 %)
+Writing at 0x0005d288... (100 %)
+Wrote 318192 bytes (164924 compressed) at 0x00010000 in 4.4 seconds (effective 573.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 275.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

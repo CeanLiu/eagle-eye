@@ -1,0 +1,124 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Holli\esp-idf\Projects\eagle-eye\main\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Users/Holli/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6600 bytes. 0xa00 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5-dev-1346-gcc9fb5bd5e\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/build/config -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/main -IC:/Users/Holli/esp-idf/components/newlib/platform_include -IC:/Users/Holli/esp-idf/components/freertos/config/include -IC:/Users/Holli/esp-idf/components/freertos/config/include/freertos -IC:/Users/Holli/esp-idf/components/freertos/config/xtensa/include -IC:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/Holli/esp-idf/components/freertos/esp_additions/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/include/soc -IC:/Users/Holli/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/Holli/esp-idf/components/esp_hw_support/dma/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/debug_probe/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -IC:/Users/Holli/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/Holli/esp-idf/components/esp_hw_support/port/esp32/include -IC:/Users/Holli/esp-idf/components/heap/include -IC:/Users/Holli/esp-idf/components/heap/tlsf -IC:/Users/Holli/esp-idf/components/log/include -IC:/Users/Holli/esp-idf/components/soc/include -IC:/Users/Holli/esp-idf/components/soc/esp32 -IC:/Users/Holli/esp-idf/components/soc/esp32/include -IC:/Users/Holli/esp-idf/components/soc/esp32/register -IC:/Users/Holli/esp-idf/components/hal/platform_port/include -IC:/Users/Holli/esp-idf/components/hal/esp32/include -IC:/Users/Holli/esp-idf/components/hal/include -IC:/Users/Holli/esp-idf/components/esp_rom/include -IC:/Users/Holli/esp-idf/components/esp_rom/esp32/include -IC:/Users/Holli/esp-idf/components/esp_rom/esp32/include/esp32 -IC:/Users/Holli/esp-idf/components/esp_rom/esp32 -IC:/Users/Holli/esp-idf/components/esp_common/include -IC:/Users/Holli/esp-idf/components/esp_system/include -IC:/Users/Holli/esp-idf/components/esp_system/port/soc -IC:/Users/Holli/esp-idf/components/esp_system/port/include/private -IC:/Users/Holli/esp-idf/components/xtensa/esp32/include -IC:/Users/Holli/esp-idf/components/xtensa/include -IC:/Users/Holli/esp-idf/components/xtensa/deprecated_include -IC:/Users/Holli/esp-idf/components/lwip/include -IC:/Users/Holli/esp-idf/components/lwip/include/apps -IC:/Users/Holli/esp-idf/components/lwip/include/apps/sntp -IC:/Users/Holli/esp-idf/components/lwip/lwip/src/include -IC:/Users/Holli/esp-idf/components/lwip/port/include -IC:/Users/Holli/esp-idf/components/lwip/port/freertos/include -IC:/Users/Holli/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/Holli/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/Holli/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/managed_components/espressif__esp32-camera/driver/include -IC:/Users/Holli/esp-idf/Projects/eagle-eye/main/managed_components/espressif__esp32-camera/conversions/include -IC:/Users/Holli/esp-idf/components/driver/deprecated -IC:/Users/Holli/esp-idf/components/driver/i2c/include -IC:/Users/Holli/esp-idf/components/driver/touch_sensor/include -IC:/Users/Holli/esp-idf/components/driver/twai/include -IC:/Users/Holli/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/Holli/esp-idf/components/esp_pm/include -IC:/Users/Holli/esp-idf/components/esp_ringbuf/include -IC:/Users/Holli/esp-idf/components/esp_driver_gpio/include -IC:/Users/Holli/esp-idf/components/esp_driver_pcnt/include -IC:/Users/Holli/esp-idf/components/esp_driver_gptimer/include -IC:/Users/Holli/esp-idf/components/esp_driver_spi/include -IC:/Users/Holli/esp-idf/components/esp_driver_mcpwm/include -IC:/Users/Holli/esp-idf/components/esp_driver_ana_cmpr/include -IC:/Users/Holli/esp-idf/components/esp_driver_i2s/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdmmc/include -IC:/Users/Holli/esp-idf/components/sdmmc/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdspi/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdio/include -IC:/Users/Holli/esp-idf/components/esp_driver_dac/include -IC:/Users/Holli/esp-idf/components/esp_driver_rmt/include -IC:/Users/Holli/esp-idf/components/esp_driver_tsens/include -IC:/Users/Holli/esp-idf/components/esp_driver_sdm/include -IC:/Users/Holli/esp-idf/components/esp_driver_i2c/include -IC:/Users/Holli/esp-idf/components/esp_driver_uart/include -IC:/Users/Holli/esp-idf/components/vfs/include -IC:/Users/Holli/esp-idf/components/esp_driver_ledc/include -IC:/Users/Holli/esp-idf/components/esp_driver_parlio/include -IC:/Users/Holli/esp-idf/components/esp_driver_usb_serial_jtag/include -IC:/Users/Holli/esp-idf/components/mbedtls/port/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/Holli/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Users/Holli/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Users/Holli/esp-idf/components/esp_app_format/include -IC:/Users/Holli/esp-idf/components/esp_bootloader_format/include -IC:/Users/Holli/esp-idf/components/app_update/include -IC:/Users/Holli/esp-idf/components/bootloader_support/include -IC:/Users/Holli/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/Holli/esp-idf/components/esp_partition/include -IC:/Users/Holli/esp-idf/components/efuse/include -IC:/Users/Holli/esp-idf/components/efuse/esp32/include -IC:/Users/Holli/esp-idf/components/esp_mm/include -IC:/Users/Holli/esp-idf/components/spi_flash/include -IC:/Users/Holli/esp-idf/components/esp_security/include -IC:/Users/Holli/esp-idf/components/pthread/include -IC:/Users/Holli/esp-idf/components/esp_timer/include -IC:/Users/Holli/esp-idf/components/app_trace/include -IC:/Users/Holli/esp-idf/components/esp_event/include -IC:/Users/Holli/esp-idf/components/nvs_flash/include -IC:/Users/Holli/esp-idf/components/esp_phy/include -IC:/Users/Holli/esp-idf/components/esp_phy/esp32/include -IC:/Users/Holli/esp-idf/components/esp_vfs_console/include -IC:/Users/Holli/esp-idf/components/esp_netif/include -IC:/Users/Holli/esp-idf/components/wpa_supplicant/include -IC:/Users/Holli/esp-idf/components/wpa_supplicant/port/include -IC:/Users/Holli/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/Users/Holli/esp-idf/components/esp_coex/include -IC:/Users/Holli/esp-idf/components/esp_wifi/include -IC:/Users/Holli/esp-idf/components/esp_wifi/include/local -IC:/Users/Holli/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/Holli/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -IC:/Users/Holli/esp-idf/components/unity/include -IC:/Users/Holli/esp-idf/components/unity/unity/src -IC:/Users/Holli/esp-idf/components/cmock/CMock/src -IC:/Users/Holli/esp-idf/components/console -IC:/Users/Holli/esp-idf/components/http_parser -IC:/Users/Holli/esp-idf/components/esp-tls -IC:/Users/Holli/esp-idf/components/esp-tls/esp-tls-crypto -IC:/Users/Holli/esp-idf/components/esp_adc/include -IC:/Users/Holli/esp-idf/components/esp_adc/interface -IC:/Users/Holli/esp-idf/components/esp_adc/esp32/include -IC:/Users/Holli/esp-idf/components/esp_adc/deprecated/include -IC:/Users/Holli/esp-idf/components/esp_driver_isp/include -IC:/Users/Holli/esp-idf/components/esp_driver_cam/include -IC:/Users/Holli/esp-idf/components/esp_driver_cam/interface -IC:/Users/Holli/esp-idf/components/esp_driver_jpeg/include -IC:/Users/Holli/esp-idf/components/esp_driver_ppa/include -IC:/Users/Holli/esp-idf/components/esp_eth/include -IC:/Users/Holli/esp-idf/components/esp_gdbstub/include -IC:/Users/Holli/esp-idf/components/esp_hid/include -IC:/Users/Holli/esp-idf/components/tcp_transport/include -IC:/Users/Holli/esp-idf/components/esp_http_client/include -IC:/Users/Holli/esp-idf/components/esp_http_server/include -IC:/Users/Holli/esp-idf/components/esp_https_ota/include -IC:/Users/Holli/esp-idf/components/esp_https_server/include -IC:/Users/Holli/esp-idf/components/esp_psram/include -IC:/Users/Holli/esp-idf/components/esp_lcd/include -IC:/Users/Holli/esp-idf/components/esp_lcd/interface -IC:/Users/Holli/esp-idf/components/protobuf-c/protobuf-c -IC:/Users/Holli/esp-idf/components/protocomm/include/common -IC:/Users/Holli/esp-idf/components/protocomm/include/security -IC:/Users/Holli/esp-idf/components/protocomm/include/transports -IC:/Users/Holli/esp-idf/components/protocomm/include/crypto/srp6a -IC:/Users/Holli/esp-idf/components/protocomm/proto-c -IC:/Users/Holli/esp-idf/components/esp_local_ctrl/include -IC:/Users/Holli/esp-idf/components/espcoredump/include -IC:/Users/Holli/esp-idf/components/espcoredump/include/port/xtensa -IC:/Users/Holli/esp-idf/components/wear_levelling/include -IC:/Users/Holli/esp-idf/components/fatfs/diskio -IC:/Users/Holli/esp-idf/components/fatfs/src -IC:/Users/Holli/esp-idf/components/fatfs/vfs -IC:/Users/Holli/esp-idf/components/idf_test/include -IC:/Users/Holli/esp-idf/components/idf_test/include/esp32 -IC:/Users/Holli/esp-idf/components/ieee802154/include -IC:/Users/Holli/esp-idf/components/json/cJSON -IC:/Users/Holli/esp-idf/components/mqtt/esp-mqtt/include -IC:/Users/Holli/esp-idf/components/nvs_sec_provider/include -IC:/Users/Holli/esp-idf/components/perfmon/include -IC:/Users/Holli/esp-idf/components/rt/include -IC:/Users/Holli/esp-idf/components/spiffs/include -IC:/Users/Holli/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -mfix-esp32-psram-cache-issue -mfix-esp32-psram-cache-strategy=memw -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/Holli/esp-idf/Projects/eagle-eye/main=. -fmacro-prefix-map=C:/Users/Holli/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c: In function 'wifi_event_handler':
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:26:17: warning: comparison between pointer and integer
+   26 |   if(event_base == WIFI_EVENT_AP_STACONNECTED) {
+      |                 ^~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:31:25: warning: comparison between pointer and integer
+   31 |   } else if (event_base == WIFI_EVENT_AP_STADISCONNECTED) {
+      |                         ^~
+In file included from C:/Users/Holli/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from C:/Users/Holli/esp-idf/components/esp_hw_support/include/esp_cpu.h:21,
+                 from C:/Users/Holli/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from C:/Users/Holli/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:4:
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c: In function 'init_wifi_staap':
+C:/Users/Holli/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected ',' or ';' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:62:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+   62 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+      |     ^~~~~~~~~~~~~~~
+In file included from C:/Users/Holli/esp-idf/components/log/include/esp_log.h:15,
+                 from C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:3:
+C:/Users/Holli/esp-idf/components/log/include/esp_log_color.h:103:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'char *' [-Werror=format=]
+  103 | #define LOG_COLOR_E           ""
+      |                               ^~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_format.h:15:37: note: in expansion of macro 'LOG_COLOR_E'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:140:86: note: in expansion of macro 'LOG_FORMAT'
+  140 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:163:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  163 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:72:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+   72 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:65:5: note: in expansion of macro 'ESP_LOGI'
+   65 |     ESP_LOGI(TAG, "SSID: %s, Password: %d", WIFI_SSID, WIFI_PASSWORD);
+      |     ^~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_color.h:104:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'char *' [-Werror=format=]
+  104 | #define LOG_COLOR_W           ""
+      |                               ^~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_format.h:15:37: note: in expansion of macro 'LOG_COLOR_W'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:141:86: note: in expansion of macro 'LOG_FORMAT'
+  141 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:163:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  163 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:72:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+   72 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:65:5: note: in expansion of macro 'ESP_LOGI'
+   65 |     ESP_LOGI(TAG, "SSID: %s, Password: %d", WIFI_SSID, WIFI_PASSWORD);
+      |     ^~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_color.h:106:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'char *' [-Werror=format=]
+  106 | #define LOG_COLOR_D           ""
+      |                               ^~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_format.h:15:37: note: in expansion of macro 'LOG_COLOR_D'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:142:86: note: in expansion of macro 'LOG_FORMAT'
+  142 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:163:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  163 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:72:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+   72 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:65:5: note: in expansion of macro 'ESP_LOGI'
+   65 |     ESP_LOGI(TAG, "SSID: %s, Password: %d", WIFI_SSID, WIFI_PASSWORD);
+      |     ^~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_color.h:107:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'char *' [-Werror=format=]
+  107 | #define LOG_COLOR_V           ""
+      |                               ^~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_format.h:15:37: note: in expansion of macro 'LOG_COLOR_V'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:143:86: note: in expansion of macro 'LOG_FORMAT'
+  143 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:163:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  163 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:72:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+   72 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:65:5: note: in expansion of macro 'ESP_LOGI'
+   65 |     ESP_LOGI(TAG, "SSID: %s, Password: %d", WIFI_SSID, WIFI_PASSWORD);
+      |     ^~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_color.h:105:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'char *' [-Werror=format=]
+  105 | #define LOG_COLOR_I           ""
+      |                               ^~
+C:/Users/Holli/esp-idf/components/log/include/esp_log_format.h:15:37: note: in expansion of macro 'LOG_COLOR_I'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:144:86: note: in expansion of macro 'LOG_FORMAT'
+  144 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:163:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  163 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/components/log/include/esp_log.h:72:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+   72 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Holli/esp-idf/Projects/eagle-eye/main/main/main.c:65:5: note: in expansion of macro 'ESP_LOGI'
+   65 |     ESP_LOGI(TAG, "SSID: %s, Password: %d", WIFI_SSID, WIFI_PASSWORD);
+      |     ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
