@@ -4,8 +4,9 @@ import Page from './components/Page/Page'
 import Contents from './components/Contents/Contents'
 import Title from './components/Title/Title'
 import About from './components/About/About'
+import LiveVideo from './components/LiveVideo/LiveVideo'
 
-const App = () => {
+const App = () => { 
   return (
     <div>
         <Navbar/>
@@ -14,7 +15,9 @@ const App = () => {
           <Title subTitle='Our Videos' title='What We Offer'/>
           <Contents/>
           <About/>
-        </div>
+          <Title subTitle='Gallery' title='Past Photos'/>
+          <LiveVideo/>
+          </div>
     </div>
   )
 }

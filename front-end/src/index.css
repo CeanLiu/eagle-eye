@@ -48,3 +48,13 @@ a {
     color: #f5f5f5;
     background: #3e0048;
 }
+
+.button.dark-button {
+    background: rgb(122, 85, 128);
+    color: #fff;
+}
+
+.button.dark-button:hover {
+    color: #f5f5f5;
+    background: #3e0048;
+}
