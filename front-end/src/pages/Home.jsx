@@ -9,7 +9,7 @@ import LiveVideo from "../components/LiveVideo/LiveVideo";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar classType={0} />
       <Page />
       <div className="container">
         <Title subTitle="Our Videos" title="What We Offer" />

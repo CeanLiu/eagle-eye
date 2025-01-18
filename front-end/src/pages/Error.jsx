@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import "../style/Error.css";
+import Navbar from "../components/navbar/Navbar";
 
 const Error = () => {
   return (
     <div>
-      404 Not Found
-      <Link to="/">Home</Link>
+      <Navbar classType={1} />
+      <h1 className="error-text">404 Not Found</h1>
     </div>
   );
 };

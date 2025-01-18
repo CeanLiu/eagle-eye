@@ -8,7 +8,7 @@ import About from "../components/About/About";
 const Video = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar className={1} />
       <Page />
       <div className="container">
         <Title subTitle="WO CAO NI MA" title="What We Offer" />

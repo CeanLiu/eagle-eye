@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
+import PropTypes from "prop-types";
 
-const Navbar = () => {
+//classType 0 => stays transparent first, then purple, anything else purple all the time
+const Navbar = ({ classType }) => {
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -13,7 +15,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`container ${sticky ? "dark-nav" : ""}`}>
+    <nav
+      className={`container ${
+        classType === 0 ? (sticky ? "dark-nav" : "") : "dark-nav"
+      }`}
+    >
       <img src={logo} alt="" className="logo" />
       <ul>
         <li>
@@ -31,6 +37,10 @@ const Navbar = () => {
       </ul>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  classType: PropTypes.number.isRequired,
 };
 
 export default Navbar;
