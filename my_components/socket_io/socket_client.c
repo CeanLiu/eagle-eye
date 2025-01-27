@@ -86,6 +86,21 @@ void websocket_connect_and_stream(const char* uri)
 
 //        // Simulate frame rate, adjust the delay if necessary
         vTaskDelay(33.33 / portTICK_PERIOD_MS); // Frame rate control (e.g., 20 FPS)
+		if(!esp_websocket_client_is_connected(client)){
+        	while (!esp_websocket_client_is_connected(client)) {
+        		vTaskDelay(pdMS_TO_TICKS(2000));
+    		}
+                
+            ESP_LOGI(TAG, "WebSocket connected, sending message...");
+    		const char *message = "{\"type\":\"setType\",\"value\":\"esp32\"}";
+    		size_t len = strlen(message);
+
+    		if (esp_websocket_client_send_text(client, message, len, portMAX_DELAY) < 0) {
+        		ESP_LOGE(TAG, "Failed to send message");
+    		} else {
+        		ESP_LOGI(TAG, "Message sent successfully: %s", message);
+    		}
+        }
     }
 
     // Cleanup after streaming
