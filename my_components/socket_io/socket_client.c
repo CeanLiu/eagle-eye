@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "esp_system.h"
 #include "esp_event.h"
 
@@ -13,6 +14,7 @@
 #include "socket_client.h"
 
 #include "camera.h"
+#include "gpio_custom.h"
 
 static const char *TAG = "WEBSOCKET";
 
@@ -25,10 +27,28 @@ void websocket_event_handler(void *handler_args, esp_event_base_t base, int32_t 
         break;
     case WEBSOCKET_EVENT_DATA:
         ESP_LOGW(TAG, "Received=%.*s\n", data->data_len, (char *)data->data_ptr);
+        char message[data->data_len + 1];
+        sprintf(message, "%.*s", data->data_len, (char *)data->data_ptr);
+        handleMessage(message);
         break;
     }
 }
+void handleMessage(const char* msg){
+    if (msg == NULL || strcmp(msg, "") == 0) {
+        ESP_LOGW(TAG, "Empty message received");
+        return;
+    }
 
+    if (strcmp(msg, "lighton") == 0) {
+        lightOn();
+        ESP_LOGI(TAG, "Lighting on");
+    } else if (strcmp(msg, "lightoff") == 0) {
+        lightOff();
+        ESP_LOGI(TAG, "Lighting off");
+    } else {
+        ESP_LOGW(TAG, "Unknown message: %s", msg);
+    }
+}
 void websocket_connect_and_stream(const char* uri)
 {
     // Define the websocket connection
@@ -90,7 +110,7 @@ void websocket_connect_and_stream(const char* uri)
         	while (!esp_websocket_client_is_connected(client)) {
         		vTaskDelay(pdMS_TO_TICKS(2000));
     		}
-                
+
             ESP_LOGI(TAG, "WebSocket connected, sending message...");
     		const char *message = "{\"type\":\"setType\",\"value\":\"esp32\"}";
     		size_t len = strlen(message);

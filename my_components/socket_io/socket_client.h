@@ -9,7 +9,8 @@
 
 // WebSocket Event Handler
 void websocket_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
-
+//handleMessage
+void handleMessage(const char* msg);
 // Start WebSocket Application
 void websocket_connect_and_stream(const char* uri);
 

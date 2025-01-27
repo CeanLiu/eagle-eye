@@ -7,12 +7,13 @@
 #include "esp_wifi.h"
 #include "camera.h"
 #include "socket_client.h"
+#include "gpio_custom.h"
 
 static const char *TAG = "main";
 
 #define WIFI_SSID "Pixel 7"
 #define WIFI_PASSWORD "big L on you"
-#define REMOTE_URL "ws://10.146.5.58:80"
+#define REMOTE_URL "ws://10.255.233.58:80"
 
 void app_main(void) {
     // Initialize NVS (non-volatile storage)
@@ -30,7 +31,7 @@ void app_main(void) {
         ESP_LOGE(TAG, "Wi-Fi initialization failed.");
         return;
     }
-
+	gpio_custom_init();
     //initialize camera
     init_camera();
 
