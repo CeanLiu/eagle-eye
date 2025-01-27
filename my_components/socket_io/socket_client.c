@@ -55,7 +55,7 @@ void websocket_connect_and_stream(const char* uri)
 
     ESP_LOGI(TAG, "WebSocket connected, sending message...");
 
-    const char *message = "Hello Server, ESP32 Connected";
+    const char *message = "{\"type\":\"setType\",\"value\":\"esp32\"}";
     size_t len = strlen(message);
 
     // Send message
@@ -77,15 +77,30 @@ void websocket_connect_and_stream(const char* uri)
         // Send the frame over WebSocket
         int send_result = esp_websocket_client_send_bin(client, (const char*)fb->buf, fb->len, portMAX_DELAY);
         if (send_result < 0) {
+            ESP_LOGE(TAG, "Failed to send frame data, error code: %d", send_result);
         } else {
             ESP_LOGI(TAG, "Successfully sent frame to server, size: %d bytes", fb->len);
         }
-            ESP_LOGE(TAG, "Failed to send frame data, error code: %d", send_result);
 
         esp_camera_fb_return(fb);  // Return the frame buffer to the camera driver
 
 //        // Simulate frame rate, adjust the delay if necessary
-//        vTaskDelay(20 / portTICK_PERIOD_MS); // Frame rate control (e.g., 20 FPS)
+        vTaskDelay(33.33 / portTICK_PERIOD_MS); // Frame rate control (e.g., 20 FPS)
+		if(!esp_websocket_client_is_connected(client)){
+        	while (!esp_websocket_client_is_connected(client)) {
+        		vTaskDelay(pdMS_TO_TICKS(2000));
+    		}
+                
+            ESP_LOGI(TAG, "WebSocket connected, sending message...");
+    		const char *message = "{\"type\":\"setType\",\"value\":\"esp32\"}";
+    		size_t len = strlen(message);
+
+    		if (esp_websocket_client_send_text(client, message, len, portMAX_DELAY) < 0) {
+        		ESP_LOGE(TAG, "Failed to send message");
+    		} else {
+        		ESP_LOGI(TAG, "Message sent successfully: %s", message);
+    		}
+        }
     }
 
     // Cleanup after streaming
