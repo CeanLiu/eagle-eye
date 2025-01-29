@@ -1,0 +1,3 @@
+[submodule "eagle-eye-backend"]
+	path = eagle-eye-backend
+	url = https://github.com/CeanLiu/eagle-eye-backend.git
