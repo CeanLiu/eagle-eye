@@ -31,10 +31,9 @@ void app_main(void) {
         ESP_LOGE(TAG, "Wi-Fi initialization failed.");
         return;
     }
-	gpio_custom_init();
     //initialize camera
     init_camera();
-
+	gpio_custom_init();
     //start http server after a delay(ensures wifi is connected)
     vTaskDelay(3000 / portTICK_PERIOD_MS);
     //set the client parameters

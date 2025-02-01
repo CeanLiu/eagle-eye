@@ -15,24 +15,24 @@ void gpio_custom_init(void) {
 	gpio_set_pull_mode(MOTION_1, GPIO_PULLDOWN_ONLY); //
     // Set initial LED state
     gpio_set_level(LED, 0); // Turn off LED initially
-
-    // Main loop for motion detection
-    while (1) {
-        // Read the PIR sensor status
-        int status = gpio_get_level(MOTION_1);
-
-        // Log the current status
-        ESP_LOGI("gpio_custom_init", "Motion sensor status: %d", status);
-
-        if (status == 1) {
-            // Motion detected
-            ESP_LOGI("gpio_custom_init", "Motion detected!");
-        } else {
-        }
-
-        // Delay for 500 ms
-        vTaskDelay(100 / portTICK_PERIOD_MS);
-    }
+//
+//     Main loop for motion detection
+//    while (1) {
+//        // Read the PIR sensor status
+//        int status = gpio_get_level(MOTION_1);
+//
+//        // Log the current status
+//        ESP_LOGI("gpio_custom_init", "Motion sensor status: %d", status);
+//
+//        if (status == 1) {
+//            // Motion detected
+//            ESP_LOGI("gpio_custom_init", "Motion detected!");
+//        } else {
+//        }
+//
+//        // Delay for 500 ms
+//        vTaskDelay(100 / portTICK_PERIOD_MS);
+//    }
 }
 
 

@@ -12,7 +12,7 @@
 #include "esp_websocket_client.h"
 #include "esp_event.h"
 #include "socket_client.h"
-
+#include "driver/gpio.h"
 #include "camera.h"
 #include "gpio_custom.h"
 
@@ -87,6 +87,16 @@ void websocket_connect_and_stream(const char* uri)
 
     // Start streaming frames
     while (1) {
+
+        int status = gpio_get_level(MOTION_1);
+
+        // Log the current status
+        ESP_LOGI("gpio_custom_init", "Motion sensor status: %d", status);
+
+        if (status == 1) {
+            // Motion detected
+            ESP_LOGI("gpio_custom_init", "Motion detected!");
+        }
         camera_fb_t* fb = capture_frame();  // Capture a frame from the camera
         if (!fb) {
             ESP_LOGE(TAG, "Failed to capture frame");
