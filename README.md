@@ -17,10 +17,6 @@ The **ESP32-CAM Web-Based Surveillance System** is an advanced, low-cost surveil
 - **Cloud Storage:** Google Drive integration for secure storage of recorded footage.
 - **Frontend:** React.js for a dynamic and responsive user experience.
 
-## System Architecture
-![System Architecture Diagram](path/to/system_architecture_image.png)  
-*Illustration of ESP32-CAM communication with sensors, backend, and cloud storage.*
-
 ## Installation & Setup
 ### Hardware Requirements
 - ESP32-CAM Module
